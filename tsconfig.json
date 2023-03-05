@@ -6,6 +6,11 @@
         "strict": true,
         "importHelpers": true,
         "isolatedModules": true,
-        "noEmit": true
-    }
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "allowJs":  false,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    },
+    "include": ["src", "templates"],
+    "references": [{ "path": "./tsconfig.node.json" }]
 }
